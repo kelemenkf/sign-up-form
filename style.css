@@ -1,0 +1,127 @@
+@font-face {
+    font-family: nord;
+    src: url(./Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: nord,sans-serif;
+}
+
+img[alt="pafrany"] {
+    width: var(--width);
+    height: var(--height);
+}
+
+img[alt="odin"] {
+    width: 20%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.background {
+    position: relative;
+    --width: 35vw;
+    --height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 8rem;
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 0.6;
+    width: 100%;
+    background-color: rgba(0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    color: white;
+    width: 35vw;
+}
+
+.text {
+    padding-top: 16px;
+    opacity: 1;
+}
+
+.form {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+}
+
+.form #quote {
+    padding: 20px;
+    background-color: rgb(182, 175, 175, 0.3);
+    padding-top: 150px;
+}
+
+.form #button {
+    background-color: rgb(182, 175, 175, 0.3);
+    padding-bottom: 123px;
+}
+
+form p {
+    font-size: 1.2rem;
+    padding-left: 30px;
+}
+
+button {
+    background-color: #596d48;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 30px;
+    box-shadow: 10px;
+    margin: 30px 20px;
+}
+
+#button div {
+    margin-left: 20px;
+}
+
+#form {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#form .left div {
+    padding: 10px;
+}
+
+#form .right div {
+    padding: 10px;
+}
+
+input:focus {
+    border: blue;
+}
+
+input {
+    border-radius: 5px;
+    border: solid rgba(0,0,0,0.3);
+    height: 1.3rem;
+    width: 180px;
+}
+
+label {
+    display: block;
+    font-size: 0.7rem;
+}
+
+a {
+    color: #596d48;
+    text-decoration: none;
+}
+
+input[type="password"]:invalid {
+    border: 2px solid red;
+}
